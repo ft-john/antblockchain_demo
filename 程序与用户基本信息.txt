@@ -1,0 +1,73 @@
+== 基本信息==
+1，admin
+	用户名：john
+	公司名：verificer
+	公司地址：chengdu
+	程序名：admin.js
+	Usage:
+		PS D:\Code\AntBlockchain> node admin.js -h
+		Usage: admin [options] [command]
+
+		Options:
+		  -h, --help                                     output usage information
+
+		Commands:
+		  update                                         Update solidity smart contract
+		  set <userName> <companyName> <companyAddress>  Set user information
+		  get <userName>                                 Get user information
+2，manufacturer
+	用户名：m
+	公司名：manufacturer
+	公司地址：guangzhou
+	程序名：manufacturer.js
+	Usage:
+		PS D:\Code\AntBlockchain> node .\manufacturer.js -h
+		Usage: manufacturer [options] [command]
+
+		Options:
+		  -h, --help                                                                 output usage information
+
+		Commands:
+		  addProduct <productName> <modelName> [description]                         Add a new product
+		  addBatch <batchNumber> <modelName> <quantity>                              Add a new product batch
+		  CreateOrder <batchNumber> <orderNumber> <manufacturerName> <retailerName>  Create a new order
+		  OrderQuery <orderNumber>                                                   Query order status
+		  GetTrackerSize <batchNumber>                 								Get totally track size from product history
+		  GetTrackerData <batchNumber> <trackerIndex>  								Get one product tracker record from product history
+3，transporter
+	用户名：t1, t2, t3
+	公司名：transporter1, transporter2, transporter3, 
+	公司地址：guangzhou, dongguan, shenzhen
+	程序名：transporter1.js, transporter2.js, transporter3.js (三个不同程序，代表三个物流途经点)
+	Usage:
+		PS D:\Code\AntBlockchain> node transporter1.js -h
+		Usage: transporter1 [options] [command]
+
+		Options:
+		  -h, --help                    output usage information
+
+		Commands:
+		  OrderTransport <orderNumber>  Start to transport the order to next location
+		  OrderSignin <orderNumber>     Order receiverd by the new location
+		  OrderQuery <orderNumber>              Query order status
+		  GetTrackerSize <batchNumber>                 								Get totally track size from product history
+		  GetTrackerData <batchNumber> <trackerIndex>  								Get one product tracker record from product history
+4，retailer:
+	用户名：r
+	公司名：retailer
+	公司地址：shenzhen
+	程序名：retailer.js
+	Usage:
+		PS D:\Code\AntBlockchain> node retailer.js -h
+		Usage: retailer [options] [command]
+
+		Options:
+		  -h, --help                            output usage information
+
+		Commands:
+		  ProductSold <batchNumber> <quantity>  Sold product to enduser
+		  OrderSignin <orderNumber>             Order receiverd by the new location
+		  InventoryQuery <batchNumber>          Query product quantity in inventory
+		  OrderQuery <orderNumber>              Query order status
+		  GetTrackerSize <batchNumber>                 								Get totally track size from product history
+		  GetTrackerData <batchNumber> <trackerIndex>  								Get one product tracker record from product history

@@ -1,0 +1,1 @@
+"use strict";module.exports=function(r,t){for(var e=r.length,n=-1;++n<e;)r[n]^=t[n];return r};

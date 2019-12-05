@@ -1,0 +1,6 @@
+﻿1，合约更新不方便
+2，账户只能新建不能删除，操作“冻结”也没反应
+3，测试过程中提示 10200 错误 - ”燃料不足”，但不知道在哪里添加GAS或调整 GAS Limit
+4，执行过程中会有提示“Start to transport the order to next location(node:13644) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.”
+5, 有时测试会卡在上一句警告提示，合约调用没有返回，不知道是否调用成功
+

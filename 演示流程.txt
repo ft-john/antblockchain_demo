@@ -1,0 +1,24 @@
+==DEMO流程==
+1, 在阿里云创建好不同角色的账户（已完成）
+2, 使用admin.js 更新合约（已完成）
+3, 使用admin.js 添加或更新账户基本信息（已完成）
+4, 使用manufacturer.js 中 AddProduct 添加基本产品信息
+5, 使用manufacturer.js 中 AddBatch 添加产品的生产批次数据
+6, 使用manufacturer.js 中 CreateOrder 将产品批次创建成订单（为简化DEMO，一个订单只包含一种产品、一个批次，一个批次会完整地包含在一张定单中不会拆分开）
+7, 使用manufacturer.js 中 OrderQuery 查询订单状态
+8, 使用transporter1.js 中 OrderTransport 开始运输订单到下一站
+9, 使用transporter1.js 中 OrderQuery 查询订单状态变化
+10, 使用transporter2.js 中 OrderSignin 接收订单到站
+11, 使用transporter2.js 中 OrderQuery 查询订单状态变化
+12, 使用transporter2.js 中 OrderTransport 开始运输订单到下一站
+13, 使用transporter2.js 中 OrderQuery 查询订单状态变化
+14, 使用transporter3.js 中 OrderSignin 接收订单到站
+15, 使用transporter3.js 中 OrderQuery 查询订单状态变化
+16, 使用transporter3.js 中 OrderTransport 开始运输订单到下一站
+17, 使用transporter3.js 中 OrderQuery 查询订单状态变化
+18, 使用retailer.js 中 OrderSignin 接收订单到站
+19, 使用retailer.js 中 OrderQuery 查询订单状态变化
+20, 使用retailer.js 中 ProductSold 销售产品
+21, 使用retailer.js 中 InventoryQuery 查询库存数量
+22, 使用retailer.js 中 GetTrackerSize 查询产品（指定批次）的溯源数据量
+23, 使用retailer.js 中 GetTrackerData 查询产品（指定批次）的具体某条溯源数据详细信息

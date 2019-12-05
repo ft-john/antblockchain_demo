@@ -1,0 +1,1 @@
+"use strict";module.exports={EVM:"01",WASM:"02"};

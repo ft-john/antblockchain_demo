@@ -1,0 +1,1 @@
+"use strict";var cCode={name:"code",type:"bytes"},parameter={name:"parameter",type:"bytes"},payload={name:"payload",type:"bytes"};module.exports={cCode:cCode,parameter:parameter,payload:payload};

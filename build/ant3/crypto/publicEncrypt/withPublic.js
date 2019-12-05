@@ -1,0 +1,1 @@
+"use strict";var BN=require("bn.js"),Buffer=require("safe-buffer").Buffer;function withPublic(e,r){return Buffer.from(e.toRed(BN.mont(r.modulus)).redPow(new BN(r.publicExponent)).fromRed().toArray())}module.exports=withPublic;

@@ -1,0 +1,1 @@
+"use strict";var event_type={name:"type",type:"decimal",value:0},filter_id={name:"filter_id",type:"decimal"},event_data_type={name:"event_type",type:"decimal"},event_data={name:"event_data",type:"bytes"};module.exports={event_type:event_type,filter_id:filter_id,event_data_type:event_data_type,event_data:event_data};

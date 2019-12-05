@@ -1,0 +1,1 @@
+"use strict";var syncing={name:"syncing",type:"decimal"},my_best={name:"my_best",type:"decimal"},target={name:"target",type:"decimal"},SyncStatus=[syncing,my_best,target];SyncStatus.name="sync_status",module.exports={syncing:syncing,my_best:my_best,target:target,SyncStatus:SyncStatus};
