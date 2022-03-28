@@ -37,7 +37,7 @@
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-uglify": "^3.0.2",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "mocha": "^5.2.0",
     "path": "^0.12.7",
     "uglifyjs-webpack-plugin": "^2.0.0",
